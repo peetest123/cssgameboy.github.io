@@ -75,32 +75,7 @@
 </head>
 
 <body>
-	<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '851814368306667',
-      xfbml      : true,
-      version    : 'v2.8'
-    });
-    FB.AppEvents.logPageView();
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-FB.api(
-  '/361535707511323/feed',
-  'GET',
-  {},
-  function(response) {
-      // Insert your code here
-  }
-);		
-</script>
+	
   <div class="hold">
   <div class="header">
     <div class="container">
@@ -124,9 +99,7 @@ FB.api(
     </div>
   </div>
 </div>
-	<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2F361535707511323&width=600&colorscheme=light&show_faces=true&border_color&stream=true&header=true&height=435"
-scrolling="yes" frameborder="0" style="border:none; overflow:hidden; width:600px; height:430px; background: white; float:left; " allowTransparency="true">
-</iframe
+	<div id="FeederNinja_4f8d78071e7e440ca8cbb6014880cfd8"></div>
 <div class="section">
   <div class="container">
     <div class="col four">
@@ -308,7 +281,13 @@ scrolling="yes" frameborder="0" style="border:none; overflow:hidden; width:600px
 </div>
   
     <script src="js/index.js"></script>
-	
+<script type="text/javascript">
+(function() {
+	var fn = document.createElement('script'); fn.type = 'text/javascript';
+	fn.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'www.feederninja.com/api/feed/4f8d78071e7e440ca8cbb6014880cfd8?fnurl=' + window.location.href;
+	var s = document.getElementsByTagName('head')[0].appendChild(fn);
+})();
+</script>	
 		
 </body>
 </html>
